@@ -20,6 +20,7 @@ a {
     flex-wrap: wrap; /*wrap to next line if not enough space */
     justify-content: space-between;
     padding-top: 90px; /*margin bottom + min height 50 + 40 */
+    background-image: url(images/gallery.svg);
 }
 
 .header-container {
@@ -79,7 +80,7 @@ footer {
     width: 30%;
     margin-bottom: 40px;
     background-color: rgb(216, 14, 14);
-
+    
 }
 
 .col p {
@@ -100,6 +101,25 @@ footer {
 
 .mob-wrapper {
  display: none; 
+}
+
+#logo1 {
+    
+    /* height: 25vw;
+    width: 20%;
+    position: fixed;
+    /* z-index: 102; */
+    /* margin-top: 0px;*/
+    top: 0; 
+    max-width: 150px; 
+
+    height: 90px; 
+    position: absolute;
+    margin: auto;
+    display: block; 
+    top: 0;
+    left: -100px;
+    right: 0;
 }
 
 /*Tablet View*/
