@@ -3,6 +3,7 @@ body {
     color: white;
     margin: 0; /*Get rid of white borders*/
     font-family:  'Asap', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     background-color: rgb(110, 1, 1);
 }
 
@@ -104,21 +105,23 @@ footer {
 }
 
 #logo1 {
-    
+
     /* height: 25vw;
     width: 20%;
     position: fixed;
     /* z-index: 102; */
     /* margin-top: 0px;*/
     top: 0; 
+    width: 20%;
     max-width: 150px; 
+    height: 25vw;
 
-    height: 90px; 
+    /* height: 90px;  */
     position: absolute;
     margin: auto;
     display: block; 
-    top: 0;
-    left: -100px;
+    top: -120px;
+    left: -1350px;
     right: 0;
 }
 
