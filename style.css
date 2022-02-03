@@ -1,0 +1,193 @@
+/*Global View akd Desktop View*/
+body {
+    color: white;
+    margin: 0; /*Get rid of white borders*/
+    font-family:  'Asap', sans-serif;
+    background-color: rgb(10, 183, 236);
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none; /*Gets rid of underline on links*/
+}
+
+.container {
+    /* background-color: rgb(197, 184, 209); /*Gallery bg color */
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto; /*top bottom   left right */
+    display: flex; /*get inline*/
+    flex-wrap: wrap; /*wrap to next line if not enough space */
+    justify-content: space-between;
+    padding-top: 90px; /*margin bottom + min height 50 + 40 */
+}
+
+.header-container {
+    background-color: rgb(255, 0, 0);
+    min-height: 50px;
+    /* margin-bottom: 40px; */
+    /* Make header stick */
+    position: fixed; /*Make it come out of the flow, no longer blocking*/
+    width: 100%;
+}
+
+header {
+    max-width: 1024px;
+    /*background-color: blueviolet;*/
+    min-height: 50px;
+    margin: 0 auto; /*centers it on page*/
+    display: flex; /*makes text one line*/
+    justify-content: space-between; /*adds space between logo and nav buttons*/
+    align-items: center; /*centers them vertically*/
+}
+
+
+
+.footer-container {
+    background-color: rgb(255, 0, 0);
+    min-height: 100px;
+    margin-top: 40px;
+}
+
+footer {
+    max-width: 1024px;
+    /*background-color: blueviolet; */
+    min-height: 100px;
+    margin: 0 auto; /*centers it on page*/
+}
+
+
+#fixme {
+    width:auto;
+    height:auto;
+}
+.hide-desktop-only {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-weight: bold;
+}
+
+.col {
+    /*min-height: 200px;*/
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(216, 14, 14);
+
+
+
+/* 
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover; */
+}
+
+.col p {
+    /* color: white; */
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 0.825rem;
+}
+
+img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.mybutton {
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+    /* margin-left: -5px;    tabs format
+    padding:20px; */
+}
+
+.mob-wrapper {
+ display: none; 
+}
+
+/*Tablet View*/
+@media (max-width: 768px){
+    .col {
+        width: 47% /*width that allows for 2 boxers in a row*/
+    }
+
+    .hide-desktop-only {
+        display: block;
+    }
+
+    /* simple css only change layout for mobile */
+    /* header {                     for other style of site
+        display: block;
+        text-align: center;
+    } */
+
+    nav {
+        display: none;
+    }
+
+   /* All below for resize nav into rows for avoiding burger menu */
+    nav a {
+        display: block;
+    } 
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    .mybutton {
+        margin-left: 0;
+    }
+
+    .header-container{
+        position: relative;
+    }
+
+    .container {
+        padding-top: 40px; 
+    }  
+
+     .mob-wrapper {
+        display: block; 
+        padding-right: 30px;
+    } 
+
+    .mob-nav {
+        display: none; /*default on. turn on with javascript*/
+        position: absolute; /*only acknowledge parents*/
+        padding-top: 10px;
+    }
+
+    .navbutton {
+        display: block;
+        background-color: rgb(138, 5, 5);
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+}
+
+/*Mobile View*/
+@media (max-width: 400px){
+    .col {
+        width: 100%
+    }
+
+    .hide-mobile-only {
+        display: none;
+    }
+
+    /* .mob-wrapper {
+        display: block; 
+    } */
+}
