@@ -5,6 +5,14 @@ body {
     font-family:  'Asap', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     background-color: rgb(110, 1, 1);
+
+    /* background-image: url(images/gallery.svg);
+    background-color: #333333;
+    background-repeat: no-repeat;
+    background-position: 0 top;
+    background-size: 100%;
+    overflow: visible;
+    width: 100%; */
 }
 
 a {
@@ -21,7 +29,17 @@ a {
     flex-wrap: wrap; /*wrap to next line if not enough space */
     justify-content: space-between;
     padding-top: 90px; /*margin bottom + min height 50 + 40 */
+
+    /* background-color: rgb(255, 255, 255); */
+
     background-image: url(images/gallery.svg);
+    background-color: #333333;
+    background-repeat: no-repeat;
+    background-position: 0 top;
+    background-size: 100%;
+    overflow: visible;
+    width: 100%;
+
 }
 
 .header-container {
@@ -92,13 +110,30 @@ footer {
 }
 
 .mybutton {
-    padding: 10px 25px;
-    border-style: solid;
-    border-width: 1px;
+    padding: 10px 5px;
+    /* border-style: solid;
+    border-width: 1px; */
     margin-left: 20px;
+    
+    color: white;
+    font-size: 1.75em;
+    font-weight: 600;
+    /* margin-left: 20px; */
     /* margin-left: -5px;    tabs format
     padding:20px; */
 }
+
+.soc {
+    padding: 5px 2px;
+    color: white;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
 
 .mob-wrapper {
  display: none; 
