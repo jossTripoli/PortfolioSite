@@ -43,7 +43,7 @@ a {
 }
 
 .header-container {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(233, 3, 3);
     min-height: 50px;
     /* margin-bottom: 40px; */
     /* Make header stick */
@@ -53,7 +53,7 @@ a {
 
 header {
     max-width: 1024px;
-    /*background-color: blueviolet;*/
+    /* background-color: blueviolet; */
     min-height: 50px;
     margin: 0 auto; /*centers it on page*/
     display: flex; /*makes text one line*/
@@ -64,23 +64,43 @@ header {
 
 
 .footer-container {
-    background-color: rgb(255, 0, 0);
-    min-height: 100px;
-    margin-top: 40px;
+    background-color: rgb(233, 3, 3);
+    min-height: 70px;
+    /* margin-top: 40px; */
+    width: 100%;
+    align-items: center; /*centers them vertically*/
+    position: relative;
 }
 
 footer {
     max-width: 1024px;
-    /*background-color: blueviolet; */
-    min-height: 100px;
-    margin: 0 auto; /*centers it on page*/
+    /* background-color: blueviolet; */
+    min-height: 60px;
+
+
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 200px;
+    bottom: 0;
+
 }
 
+/* #copyright {
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px;
+} */
 
 #fixme {
     width:auto;
     height:auto;
 }
+
 .hide-desktop-only {
     display: none;
 }
@@ -114,7 +134,6 @@ footer {
     /* border-style: solid;
     border-width: 1px; */
     margin-left: 20px;
-    
     color: white;
     font-size: 1.75em;
     font-weight: 600;
@@ -123,11 +142,39 @@ footer {
     padding:20px; */
 }
 
-.soc {
-    padding: 5px 2px;
+/* .soc {
+
+} */
+
+#social-media {
+    text-align: right;
+
+    margin-left: 5px;
     color: white;
+
+    position:absolute;
+    z-index:100;
+    top: 0;
+    right: 0;
+    /* padding-top: 10px; */
+    padding: 5px 3px;
+    margin: 5px;
+    margin-right: 10px;
+    /* margin: 20px; */
+    /* padding: 20px; */
 }
 
+#social-media-footer {
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+#name {
+    font-size: 2.5em;
+    font-weight: 600;
+}
 
 nav a:hover {
     text-decoration: underline;
@@ -160,6 +207,16 @@ nav a:hover {
     right: 0;
 }
 
+/*Small desktop no social media  View*/
+@media (max-width: 1300px){
+    #social-media {
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 180px;
+    }
+}
 /*Tablet View*/
 @media (max-width: 768px){
     .col {
