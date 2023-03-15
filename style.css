@@ -2,9 +2,12 @@
 body {
     color: white;
     margin: 0; /*Get rid of white borders*/
-    font-family:  'Asap', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: rgb(110, 1, 1);
+    /* font-family:  'Asap', sans-serif; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family:  'Open sans', sans-serif;
+    /* font-family: 'Didact Gothic', sans-serif; */
+    /* background-color: #E6D7FF; */
+    background-color: #a44dc4;
 
     /* background-image: url(images/gallery.svg);
     background-color: #333333;
@@ -15,35 +18,62 @@ body {
     width: 100%; */
 }
 
+#about {
+    background-color: #fff; /* Set background color */
+    border-radius: 8px; /* Set border radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add box shadow for a raised effect */
+    margin: 0 auto; /* Center horizontally */
+    max-width: 600px; /* Set maximum width */
+    padding: 20px; /* Add some padding */
+    color: black;
+    margin-bottom: 50px;
+}
+
+.gallery-header {
+    position: relative;
+    /* margin-top: 80px; */
+    z-index: -1;
+    font-size: 2.5em;
+    text-align: center;
+}
 a {
     color: rgb(255, 255, 255);
     text-decoration: none; /*Gets rid of underline on links*/
 }
 
+.outer-container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto; /*top bottom   left right */
+    padding-top: 90px; /*margin bottom + min height 50 + 40 */
+    /* background-color: rgb(174, 107, 179); */
+    width: 100%;
+}
+
 .container {
     /* background-color: rgb(197, 184, 209); /*Gallery bg color */
-    min-height: 500px;
+    min-height: 340px;
     max-width: 1024px;
     margin: 0 auto; /*top bottom   left right */
     display: flex; /*get inline*/
     flex-wrap: wrap; /*wrap to next line if not enough space */
     justify-content: space-between;
-    padding-top: 90px; /*margin bottom + min height 50 + 40 */
+    padding-top: 40px; /*margin bottom + min height 50 + 40 */
 
-    /* background-color: rgb(255, 255, 255); */
-
-    background-image: url(images/gallery.svg);
-    background-color: #333333;
+    /* background-color: rgb(0, 238, 147); */
+    /* MAKE THE DOTS IN THE BACKGROUND */
+    /* background-image: url(images/gallery.svg); */
+    /* background-color: #048d02; */
     background-repeat: no-repeat;
     background-position: 0 top;
     background-size: 100%;
     overflow: visible;
     width: 100%;
-
 }
 
 .header-container {
-    background-color: rgb(233, 3, 3);
+    /* background-color: rgb(233, 3, 3); */
+    background-color: #68028d;
     min-height: 50px;
     /* margin-bottom: 40px; */
     /* Make header stick */
@@ -64,7 +94,8 @@ header {
 
 
 .footer-container {
-    background-color: rgb(233, 3, 3);
+    background-color: #68028d;
+    /* background-color: rgb(233, 3, 3); */
     min-height: 70px;
     /* margin-top: 40px; */
     width: 100%;
@@ -117,9 +148,9 @@ footer {
 .col {
     /*min-height: 200px;*/
     width: 30%;
-    margin-bottom: 40px;
-    background-color: rgb(216, 14, 14);
-    
+    margin-bottom: 10px;
+    background-color: rgb(88, 0, 112);
+    height: 300px;
 }
 
 .col p {
@@ -127,6 +158,27 @@ footer {
     font-size: 0.875rem;
     padding: 20px 25px;
     line-height: 0.825rem;
+}
+
+.col .whitebg {
+    background-color: white;
+}
+
+.col img:hover {
+    /* background-color: white; */
+    /* filter: blur(5px);
+    filter: brightness(0.4);
+    filter: contrast(200%);
+    filter: drop-shadow(16px 16px 20px blue);
+    filter: grayscale(50%);
+    filter: hue-rotate(90deg);
+    filter: invert(75%);
+    filter: opacity(25%);
+    filter: saturate(30%);
+    filter: sepia(60%); */
+    /* background: rgba(255, 255, 255, 0.5); */
+    /* opacity: 0.5;
+    transition: background .3s linear; */
 }
 
 .mybutton {
@@ -140,6 +192,33 @@ footer {
     /* margin-left: 20px; */
     /* margin-left: -5px;    tabs format
     padding:20px; */
+
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    padding-top: 11px;
+    text-align: center;
+}
+
+/* style nav buttons inside of gallery */
+.dropdown .navbutton {
+    width:110px;
+    background-color: white;
+}
+
+.dropdown .navbutton a{
+    color:#333333;
+    font-size: 0.5em;
+
+}
+
+.mybutton:hover .dropdown {
+    display: block;
 }
 
 /* .soc {
