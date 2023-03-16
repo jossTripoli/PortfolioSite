@@ -7,7 +7,10 @@ body {
     font-family:  'Open sans', sans-serif;
     /* font-family: 'Didact Gothic', sans-serif; */
     /* background-color: #E6D7FF; */
-    background-color: #a44dc4;
+    background-color: white;
+
+    position: relative;
+    /* background-color: #a44dc4; */
 
     /* background-image: url(images/gallery.svg);
     background-color: #333333;
@@ -18,10 +21,56 @@ body {
     width: 100%; */
 }
 
+#portfolio-container {
+    background-color: #a44dc4;
+}
+
+#welcome-container{
+    padding-top: 100px;
+    /* background-color: red; */
+    color: black;
+    height: 565px;
+    display: flex;
+    justify-content: center;
+}
+
+#welcome-content {
+    display: inline;
+    justify-content: center;
+    width: 1024px;
+    background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+
+#joss {
+    transform: scale(0.9);
+    /* margin-left: -400px; */
+    float: right;
+    z-index: -1;
+    position: fixed;
+}
+
+#welcome-text {
+    float: right;
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgb(88, 0, 112);
+    /* margin: auto; */
+    /* background-color: red !important; */
+}
+
+#hello {
+    margin-right: 250px;
+}
+
+#name {
+    margin-right: 0px;
+}
+
 #about {
     background-color: #fff; /* Set background color */
     border-radius: 8px; /* Set border radius */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add box shadow for a raised effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     margin: 0 auto; /* Center horizontally */
     max-width: 600px; /* Set maximum width */
     padding: 20px; /* Add some padding */
@@ -47,6 +96,7 @@ a {
     margin: 0 auto; /*top bottom   left right */
     padding-top: 90px; /*margin bottom + min height 50 + 40 */
     /* background-color: rgb(174, 107, 179); */
+    background-color: #a44dc4;
     width: 100%;
 }
 
@@ -79,6 +129,7 @@ a {
     /* Make header stick */
     position: fixed; /*Make it come out of the flow, no longer blocking*/
     width: 100%;
+    z-index: 999;
 }
 
 header {
