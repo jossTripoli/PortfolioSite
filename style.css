@@ -1,3 +1,4 @@
+
 /*Global View akd Desktop View*/
 body {
     color: white;
@@ -26,21 +27,23 @@ body {
 }
 
 #welcome-container{
-    padding-top: 100px;
+    /* padding-top: 100px; */
     /* background-color: red; */
     color: black;
-    height: 565px;
+    /* height: 565px; */
     display: flex;
     justify-content: center;
     height: 100vh;
 }
 
 #welcome-content {
+    padding-top: 100px;
     display: inline;
     justify-content: center;
     width: 1024px;
     /* background-color: rgba(0, 0, 0, 0.08) !important; */
 }
+
 
 
 #joss {
