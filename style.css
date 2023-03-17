@@ -22,10 +22,20 @@ body {
     width: 100%; */
 }
 
-#portfolio-container {
+/* #portfolio-container {
     background-color: #a44dc4;
+    background-color: orange !important;
+
+} */
+
+#project-container {
+    background-color: lightgray;
+    width: 100%;
 }
 
+#coding {
+    width: 50%;
+}
 #welcome-container{
     /* padding-top: 100px; */
     /* background-color: red; */
@@ -43,7 +53,6 @@ body {
     width: 1024px;
     /* background-color: rgba(0, 0, 0, 0.08) !important; */
 }
-
 
 
 #joss {
@@ -84,16 +93,77 @@ body {
     font-size: 0.85em;
 }
 
-#about {
+#about-container {
+    height: 100vh;
+    background-color: #a44dc4;
+    /* background-color: #68028d; */
+
+    /* padding-top: 90px;  */
+}
+
+.about-section-header {
+    /* background-color: green; */
+    width: 400px;
+    font-size: 62px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    margin-left: 25px;
+}
+
+#dark-purple {
+    background-color: #68028d;
+    height: 100%;
+    padding-top: 90px;
+}
+
+#about-content-container {
+    display: flex;
+    align-items: center;
+}
+
+
+#about-text {
     background-color: #fff; /* Set background color */
     border-radius: 8px; /* Set border radius */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    margin: 0 auto; /* Center horizontally */
+     /* margin: 0 auto;Center horizontally */
     max-width: 600px; /* Set maximum width */
     padding: 20px; /* Add some padding */
     color: black;
     margin-bottom: 50px;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 200px;
 }
+
+#coding {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    margin-right: 5%;
+
+    /* margin-bottom: 100px; */
+}
+
+#about-section-header {
+
+}
+
+.section-header {
+    font-size: 3em;
+    font-weight: 600;
+    height: 100px;
+    width: 200px;
+    /* background-color: gray; */
+    padding-top: 90px; 
+    padding-bottom: 90px; 
+    /* margin-left: 100px;
+    margin-top: 200px;
+    padding: 50px; */
+}
+
 
 .gallery-header {
     position: relative;
@@ -101,18 +171,22 @@ body {
     font-size: 2.5em;
     text-align: center;
 }
+
 a {
     color: rgb(255, 255, 255);
     text-decoration: none; /*Gets rid of underline on links*/
 }
 
-.outer-container {
+.content-container {
     min-height: 500px;
     max-width: 1024px;
     margin: 0 auto; /*top bottom   left right */
-    padding-top: 90px; /*margin bottom + min height 50 + 40 */
+    /*margin bottom + min height 50 + 40 */
+    /* padding-top: 90px;  */
     /* background-color: rgb(174, 107, 179); */
-    background-color: #a44dc4;
+    /* background-color: #a44dc4; */
+    /* background-color: orange !important; */
+
     width: 100%;
 }
 
