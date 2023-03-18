@@ -22,15 +22,49 @@ body {
     width: 100%; */
 }
 
-/* #portfolio-container {
-    background-color: #a44dc4;
-    background-color: orange !important;
-
-} */
 
 #project-container {
-    background-color: lightgray;
+    background-color: white;
+    /* color: rgb(88, 0, 112); */
+    color: white;
+
+    /* color: #a44dc4;  */
+    /* background-color: lightgray; */
     width: 100%;
+}
+
+#project-container h1 {
+    color: rgb(88, 0, 112);
+}
+
+
+#project-container h1:first-of-type {
+    width: 400px;
+    font-size: 62px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+#light-gray {
+    background-color: white;
+}
+
+#contact-container {
+    /* color: rgb(88, 0, 112); */
+    color: white;
+
+    /* color: #a44dc4;  */
+    background-color: #a44dc4;;
+    width: 100%;
+}
+
+#contact-container h1 {
+    color: white;
+    width: 400px;
+    font-size: 62px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    margin-left: 25px;
 }
 
 #coding {
@@ -147,10 +181,6 @@ body {
     /* margin-bottom: 100px; */
 }
 
-#about-section-header {
-
-}
-
 .section-header {
     font-size: 3em;
     font-weight: 600;
@@ -214,12 +244,15 @@ a {
 .header-container {
     /* background-color: rgb(233, 3, 3); */
     background-color: #68028d;
-    min-height: 50px;
+    min-height: 55px;
     /* margin-bottom: 40px; */
     /* Make header stick */
     position: fixed; /*Make it come out of the flow, no longer blocking*/
     width: 100%;
     z-index: 999;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* border-bottom: 3px solid #fff; */
 }
 
 header {
